@@ -1,0 +1,75 @@
+----
+RUNNING: tests/it_tests
+adding 0 in iterator...
+adding 1 in iterator...
+adding 2 in iterator...
+adding 3 in iterator...
+adding 4 in iterator...
+adding 5 in iterator...
+adding 6 in iterator...
+adding 7 in iterator...
+adding 8 in iterator...
+adding 9 in iterator...
+adding 10 in iterator...
+previous value is 10
+previous value is 9
+previous value is 8
+previous value is 7
+previous value is 6
+previous value is 5
+previous value is 4
+previous value is 3
+previous value is 2
+previous value is 1
+previous value is 0
+Checking point...very first
+Should be start from 6
+next value is 6
+next value is 7
+next value is 8
+next value is 9
+next value is 10
+Checking poing...very last
+move brfore the value 3
+Should start from value 3
+next value is 3
+next value is 4
+next value is 5
+next value is 6
+next value is 7
+next value is 8
+next value is 9
+next value is 10
+set the last value to -1
+test reset...
+next value is 0
+next value is 1
+next value is 2
+next value is 3
+next value is 4
+next value is 5
+next value is 6
+next value is 7
+next value is 8
+next value is 9
+next value is -1
+
+
+
+now testing delete function
+four situation to delete..
+Delete the vary first element 0 
+testing delete function...deleting the value 5..
+deleting the value 4..
+deleting the value 1..
+reset the position...
+next value is 2
+next value is 3
+next value is 6
+next value is 7
+next value is 8
+next value is 9
+next value is -1
+testing free function
+ALL TESTS PASSED
+Tests run: 4
