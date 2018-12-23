@@ -5,7 +5,7 @@
 
 static IteratorInt test_it = NULL;
 char *test_create() {
-	printf("For some reasons, the test is not available for the time being and the content may be updated a little .\n--Ricky\n");
+	printf("For my reasons, the test is not available for the time being and the content may be updated a little .\n--Ricky\n");
 
 // 	test_it = IteratorIntNew();
 // 	mu_assert(test_it != NULL, "Failed to create Iterator one !!");
