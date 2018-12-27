@@ -116,7 +116,7 @@ char *test_deleteElm() {
 	}
 	set(test_2, 777);
 	set(test_it,555);
-	printf("now testing set func for it1, set should be failed ..\nnow let's reset first..\n");
+	printf("now testing set func for it2, set should be failed ..\nnow let's reset first..\n");
 	reset(test_2);
 	while (hasNext(test_2)) {
 		int *pp = next(test_2);
