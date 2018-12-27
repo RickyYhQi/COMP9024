@@ -8,6 +8,7 @@ char *test_create() {
 	printf("For my reasons, the test is not available for the time being and the content may be updated a little .\n--Ricky\n");
 
  	test_it = IteratorIntNew();
+	test_2  = IteratorIntNew();
  	mu_assert(test_it != NULL, "Failed to create Iterator one !!");
 
 	return NULL;
@@ -103,8 +104,18 @@ char *test_deleteElm() {
 		printf("next value is %d\n",*pp);
 		mu_assert(pp != NULL, "Failed to move to next one !");
 	}
-
+	printf("adding for test 2: 888,999\n");
+	add(test_2,888);
+	add(test_2,999);
+	reset(test_2);
+	printf("the ele in it2 is ...\n");
+	while (hasNext(test_2)) {
+		int *pp = next(test_2);
+		printf("next value is %d\n",*pp);
+		mu_assert(pp != NULL, "Failed to move to next one !");
+	}
 	return NULL;
+	
 }
 
 
