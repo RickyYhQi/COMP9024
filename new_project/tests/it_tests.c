@@ -7,8 +7,8 @@ static IteratorInt test_it = NULL;
 char *test_create() {
 	printf("For my reasons, the test is not available for the time being and the content may be updated a little .\n--Ricky\n");
 
-// 	test_it = IteratorIntNew();
-// 	mu_assert(test_it != NULL, "Failed to create Iterator one !!");
+ 	test_it = IteratorIntNew();
+ 	mu_assert(test_it != NULL, "Failed to create Iterator one !!");
 
 	return NULL;
 }
@@ -60,7 +60,8 @@ char *test_add() {
 		mu_assert(pp != NULL, "Failed to move to next one !");
 	}
 	printf("set the last value to -1\n");
-	mu_assert(set(test_it,-1) == 1, "Failed to set last value to -1\n");
+	printf("the set function should be failed\n");
+	mu_assert(set(test_it,-1) == 0, "Failed to set last value to -1\n");
 	printf("test reset...\n");
 	reset(test_it);
 	mu_assert(hasPrevious(test_it) == 0, "Failed to reset");
@@ -119,6 +120,9 @@ char *all_tests() {
 	mu_suite_start();
 
 	mu_run_test(test_create);
+	mu_run_test(test_add);
+	mu_run_test(test_deleteElm);
+	mu_run_test(freeIt);
 	return NULL;
 }
 
