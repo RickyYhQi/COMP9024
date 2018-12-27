@@ -75,7 +75,7 @@ now testing iterator_2 add two num : 888,999
 the ele in it2 is ...
 next value is 888
 next value is 999
-now testing set func for it1, set should be failed ..
+now testing set func for it2, set should be failed ..
 now let's reset first..
 next value is 888
 next value is 999
