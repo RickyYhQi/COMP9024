@@ -118,13 +118,15 @@ char *test_deleteElm() {
 	}
 	set(test_2, 777);
 	set(test_it,555);
-	printf("now testing set func for it1, should be failed ..\n");
+	printf("now testing set func for it1, set should be failed ..\nnow let's reset first..\n");
+	reset(test_2);
 	while (hasNext(test_2)) {
 		int *pp = next(test_2);
 		printf("next value is %d\n",*pp);
 		mu_assert(pp != NULL, "Failed to move to next one !");
 	}
-	printf("now testing set func for it2, should be failed ..\n");
+	printf("now testing set func for it1, set should be failed ..\nnow let's reset first..\n");
+	reset(test_it);
 	while (hasNext(test_it)) {
 		int *pp = next(test_it);
 		printf("next value is %d\n",*pp);
