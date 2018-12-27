@@ -132,6 +132,28 @@ char *test_deleteElm() {
 		printf("next value is %d\n",*pp);
 		mu_assert(pp != NULL, "Failed to move to next one !");
 	}
+	printf("set 888 to 88888 in it1\n");
+	printf("set 6 to 66666 in it2\n");
+	printf("both should be success!\n");
+	findPrevious(test_2,888);
+	findPrevious(test_it,6);
+	set(test_it,66666);
+	set(test_2,88888);
+	reset(test_2);
+	while (hasNext(test_2)) {
+		int *pp = next(test_2);
+		printf("next value is %d\n",*pp);
+		mu_assert(pp != NULL, "Failed to move to next one !");
+	}
+	printf("now testing set func for it1, set should be failed ..\nnow let's reset first..\n");
+	reset(test_it);
+	while (hasNext(test_it)) {
+		int *pp = next(test_it);
+		printf("next value is %d\n",*pp);
+		mu_assert(pp != NULL, "Failed to move to next one !");
+	}
+	
+	
 	
 	return NULL;
 	
