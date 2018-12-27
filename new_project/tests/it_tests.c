@@ -62,7 +62,7 @@ char *test_add() {
 	}
 	printf("set the last value to -1\n");
 	printf("the set function should be failed\n");
-	mu_assert(set(test_it,-1) == 0, "the set should return 0 but your func return other value\n");
+	mu_assert(set(test_it,-1) == 0, "the set should return 0 but your func return other value\ncause the last call func isn't next() but hasNext()\n");
 	printf("test reset...\n");
 	reset(test_it);
 	mu_assert(hasPrevious(test_it) == 0, "Failed to reset");
