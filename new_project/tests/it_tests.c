@@ -4,6 +4,8 @@
 #include <stdlib.h>
 
 static IteratorInt test_it = NULL;
+static IteratorInt test_2 = NULL;
+
 char *test_create() {
 	printf("For my reasons, the test is not available for the time being and the content may be updated a little .\n--Ricky\n");
 
