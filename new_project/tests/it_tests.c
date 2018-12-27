@@ -163,6 +163,7 @@ char *test_deleteElm() {
 char *test_freeIt() {
 	printf("testing free function\n");
 	freeIt(test_it);
+	freeIt(test_2);
 
 	return NULL;
 }
