@@ -122,7 +122,7 @@ char *all_tests() {
 	mu_run_test(test_create);
 	mu_run_test(test_add);
 	mu_run_test(test_deleteElm);
-	mu_run_test(freeIt);
+	mu_run_test(test_freeIt);
 	return NULL;
 }
 
