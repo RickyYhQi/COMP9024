@@ -91,11 +91,11 @@ next value is 10
 set 888 to 88888 in it1
 set 6 to 66666 in it2
 both should be success!
-now testing set func for it1, set should be success ..
+now testing set func for it2, set should be success ..
 now let's reset first..
 next value is 88888
 next value is 999
-now testing set func for it2, set should be success ..
+now testing set func for it1, set should be success ..
 now let's reset first..
 next value is 2
 next value is 3
