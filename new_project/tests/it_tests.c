@@ -106,7 +106,7 @@ char *test_deleteElm() {
 		printf("next value is %d\n",*pp);
 		mu_assert(pp != NULL, "Failed to move to next one !");
 	}
-	printf("adding for test 2: 888,999\n");
+	printf("now testing iterator_2 add two num : 888,999\n");
 	add(test_2,888);
 	add(test_2,999);
 	reset(test_2);
@@ -116,6 +116,21 @@ char *test_deleteElm() {
 		printf("next value is %d\n",*pp);
 		mu_assert(pp != NULL, "Failed to move to next one !");
 	}
+	set(test_2, 777);
+	set(test_it,555);
+	printf("now testing set func for it1, should be failed ..\n");
+	while (hasNext(test_2)) {
+		int *pp = next(test_2);
+		printf("next value is %d\n",*pp);
+		mu_assert(pp != NULL, "Failed to move to next one !");
+	}
+	printf("now testing set func for it2, should be failed ..\n");
+	while (hasNext(test_it)) {
+		int *pp = next(test_it);
+		printf("next value is %d\n",*pp);
+		mu_assert(pp != NULL, "Failed to move to next one !");
+	}
+	
 	return NULL;
 	
 }
