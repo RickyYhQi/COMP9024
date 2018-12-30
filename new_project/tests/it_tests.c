@@ -7,6 +7,7 @@ static IteratorInt test_it = NULL;
 static IteratorInt test_2 = NULL;
 
 char *test_create() {
+	printf("可读性是什么？\n");
  	test_it = IteratorIntNew();
 	test_2  = IteratorIntNew();
  	mu_assert(test_it != NULL, "Failed to create Iterator one !!");
