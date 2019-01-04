@@ -21,7 +21,7 @@
         printf("FAILED: %s\n", result);\
     }\
     else {\
-        printf("ALL TESTS PASSED\n");\
+        printf("感谢支持，本测试寿命已到，不再提供公开接口，谢谢\n");\
     }\
     printf("Tests run: %d\n", tests_run);\
     exit(result != 0);\
